@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Tierarztpraxis",
+  "name": "Tierarztpraxis Dr. Jens Giese",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "veterinaer_logo.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
