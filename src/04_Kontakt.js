@@ -4,3 +4,10 @@
   alt='demo'
 />
 </AspectRatio>  */
+export default function Kontakt() {
+  return (
+    <div id="Kontakt / Anfahrt">
+      <h1>Hello</h1>
+    </div>
+  );
+}

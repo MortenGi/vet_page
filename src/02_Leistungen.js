@@ -13,38 +13,89 @@ import { LoremIpsum } from "react-lorem-ipsum";
 
 export default function Leistungen() {
   return (
-    <div>
-      {/*
-      <AspectRatio maxW="400px" ratio={4 / 3}>
-        <Image src="./hund_knuffig.jpg" alt="Hund" objectFit="cover" />
-  </AspectRatio>
-      <Grid templateColumns="repeat(2, 5fr)" gap={1}>
-        <GridItem w="100%" h="50">
-          {" "}
-          <Image src="./hund_knuffig.jpg" alt="Hund" objectFit="contain" />{" "}
-        </GridItem>
-        <GridItem w="100%" h="50">
-          <Center>
-            <Text>Hallo</Text>
-          </Center>
-        </GridItem>
-      </Grid>*/}
-
-      <Container>
-        {" "}
-        <Flex>
-          <VStack w="full" h="full" spacing={10} alignItems="flex-start">
-            <Image src="./hund_knuffig.jpg" alt="Hund" objectFit="contain" />
-          </VStack>
-          <VStack w="full" h="full" spacing={10} bg="gray.50">
-            <Center>
-              <Text>
-                <LoremIpsum></LoremIpsum>
-              </Text>
-            </Center>
-          </VStack>
+    <div id="Leistungen">
+      {/* ----PPART 1: DOGGO----P */}
+      <SimpleGrid
+        columns={{
+          base: 1,
+          md: 2,
+        }}
+        spacing={0}
+      >
+        <Flex bg="brand.400">
+          <Image
+            src="./hund_knuffig.jpg"
+            alt="Hund"
+            fit="cover"
+            w="full"
+            borderRadius="10px"
+            h={{
+              base: 64,
+              md: "full",
+            }}
+            bg="gray.100"
+            loading="lazy"
+          />
         </Flex>
-      </Container>
+        <Flex
+          direction="column"
+          alignItems="start"
+          justifyContent="center"
+          px={{
+            base: 4,
+            md: 8,
+            lg: 20,
+          }}
+          py={24}
+          zIndex={3}
+        >
+          <Text height="300px">
+            <LoremIpsum></LoremIpsum>
+          </Text>
+        </Flex>
+      </SimpleGrid>
+
+      {/* ----PART 2: COW---- */}
+
+      <SimpleGrid
+        columns={{
+          base: 1,
+          md: 2,
+        }}
+        spacing={0}
+      >
+        <Flex bg="brand.400">
+          <Image
+            src="./kuh_nichtsosuess.jpg"
+            alt="Hund"
+            fit="cover"
+            w="full"
+            borderRadius="10px"
+            h={{
+              base: 64,
+              md: "full",
+            }}
+            bg="gray.100"
+            loading="lazy"
+          />
+        </Flex>
+        <Flex
+          direction="column"
+          alignItems="start"
+          justifyContent="center"
+          px={{
+            base: 4,
+            md: 8,
+            lg: 20,
+          }}
+          py={24}
+          zIndex={3}
+        >
+          <Text height="300px">
+            <LoremIpsum></LoremIpsum>
+          </Text>
+        </Flex>
+      </SimpleGrid>
     </div>
   );
 }
