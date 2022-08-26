@@ -11,6 +11,13 @@ import { Box, Grid, GridItem, SimpleGrid } from "@chakra-ui/react";
 
 import { LoremIpsum } from "react-lorem-ipsum";
 
+const img_sources = {
+  Hund_01:
+    "https://cdn.pixabay.com/photo/2015/07/09/19/32/dog-838281_960_720.jpg",
+  Kuh_01:
+    "https://cdn.pixabay.com/photo/2014/07/15/17/45/cow-394148_960_720.jpg",
+};
+
 export default function Leistungen() {
   return (
     <div id="Leistungen">
@@ -24,7 +31,7 @@ export default function Leistungen() {
       >
         <Flex bg="brand.400">
           <Image
-            src="./hund_knuffig.jpg"
+            src={img_sources["Hund_01"]}
             alt="Hund"
             fit="cover"
             w="full"
@@ -66,7 +73,7 @@ export default function Leistungen() {
       >
         <Flex bg="brand.400">
           <Image
-            src="./kuh_nichtsosuess.jpg"
+            src={img_sources["Kuh_01"]}
             alt="Hund"
             fit="cover"
             w="full"
