@@ -12,12 +12,6 @@ function App() {
     <div id="App">
       <Navigation />
       <Leistungen />
-
-      {/*<header className="App-header">
-        <Box display="grid" gridAutoFlow="row dense">
-          Tierarztpraxis Dr. Jens Giese
-        </Box>
-  </header>*/}
       <Sprechstunden />
       <Kontakt />
     </div>
