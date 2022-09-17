@@ -7,32 +7,30 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { Box, Grid, GridItem, SimpleGrid } from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
+import pathMainImage from "./images/hund_knuffig_resized.jpg";
 
 import { LoremIpsum } from "react-lorem-ipsum";
 
 const img_sources = {
-  Hund_01:
-    "https://cdn.pixabay.com/photo/2015/07/09/19/32/dog-838281_960_720.jpg",
-  Kuh_01:
-    "https://cdn.pixabay.com/photo/2014/07/15/17/45/cow-394148_960_720.jpg",
+  Hund_01: pathMainImage,
 };
 
 export default function Leistungen() {
   return (
-    <div id="Leistungen">
+    <div id="Leistungen" padding={"5"}>
       {/* ----PPART 1: DOGGO----P */}
+
       <SimpleGrid
         columns={{
           base: 1,
-          md: 2,
+          md: 1,
         }}
         spacing={0}
       >
         <Flex bg="brand.400">
           <Image
             src={img_sources["Hund_01"]}
-            alt="Hund"
             fit="cover"
             w="full"
             borderRadius="10px"
@@ -44,25 +42,8 @@ export default function Leistungen() {
             loading="lazy"
           />
         </Flex>
-        <Flex
-          direction="column"
-          alignItems="start"
-          justifyContent="center"
-          px={{
-            base: 4,
-            md: 8,
-            lg: 20,
-          }}
-          py={24}
-          zIndex={3}
-        >
-          <Text height="300px">
-            <LoremIpsum></LoremIpsum>
-          </Text>
-        </Flex>
       </SimpleGrid>
-
-      {/* ----PART 2: COW---- */}
+      {/* ----PART 2: COW---- 
 
       <SimpleGrid
         columns={{
@@ -103,6 +84,7 @@ export default function Leistungen() {
           </Text>
         </Flex>
       </SimpleGrid>
+      */}
     </div>
   );
 }

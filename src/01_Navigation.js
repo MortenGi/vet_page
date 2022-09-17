@@ -1,24 +1,17 @@
-import { ReactNode, useRef } from "react";
+import { ReactNode } from "react";
 import {
   Box,
-  Flex,
   Avatar,
   HStack,
-  Link,
-  IconButton,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
-  Stack,
+  Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import pathLogo from "./images/veterinaer_logo.jpg";
 
-const Links = ["Leistungen", "Sprechstunden", "Kontakt / Anfahrt"];
+const Links = ["Sprechstunden", "Kontakt / Anfahrt"];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Button
@@ -44,7 +37,19 @@ export default function Navigation(props) {
   return (
     <div id="NavBar">
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+        <HStack spacing={8} alignItems={"center"}>
+          <Box>
+            <Avatar src={pathLogo} alt="Tierarztpraxis Dr. Jens Giese" />
+          </Box>
+          <HStack
+            as={"nav"}
+            spacing={4}
+            display={{ base: "none", md: "flex" }}
+          ></HStack>
+          <Text as="b">Dr. med. vet. Jens Giese - Praxis für Kleintiere</Text>
+        </HStack>
+
+        {/*<Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -54,10 +59,7 @@ export default function Navigation(props) {
           />
           <HStack spacing={8} alignItems={"center"}>
             <Box>
-              <Avatar
-                src="./veterinaer_logo.png"
-                alt="Tierarztpraxis Dr. Jens Giese"
-              />
+              <Avatar src={pathLogo} alt="Tierarztpraxis Dr. Jens Giese" />
             </Box>
             <HStack
               as={"nav"}
@@ -79,7 +81,7 @@ export default function Navigation(props) {
               ))}
             </Stack>
           </Box>
-        ) : null}
+              ) : null}</div>*/}
       </Box>
     </div>
   );

@@ -3,7 +3,6 @@ import {
   Table,
   Thead,
   Tbody,
-  Tfoot,
   Tr,
   Th,
   Td,
@@ -13,7 +12,7 @@ import {
 
 export default function Sprechstunden() {
   return (
-    <div id="Sprechstunden">
+    <div id="Sprechstunden" padding={"5"}>
       <Container>
         <TableContainer>
           <Table variant="simple">
