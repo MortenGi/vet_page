@@ -9,7 +9,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import pathLogo from "veterinaer_logo.jpg";
+import pathLogo from "./images/veterinaer_logo.jpg";
 
 const Links = ["Sprechstunden", "Kontakt / Anfahrt"];
 

@@ -8,7 +8,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
-import pathMainImage from "hund_knuffig_resized.jpg";
+import pathMainImage from "./images/hund_knuffig_resized.jpg";
 
 import { LoremIpsum } from "react-lorem-ipsum";
 
