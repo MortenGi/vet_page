@@ -9,7 +9,7 @@ function App() {
   return (
     <div id="App">
       <Navigation />
-      <Urlaub />
+
       <Sprechstunden />
       <Leistungen />
     </div>
