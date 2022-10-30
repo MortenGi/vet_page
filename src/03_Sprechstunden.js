@@ -19,9 +19,9 @@ export default function Sprechstunden() {
             <TableCaption>Termine auch gerne nach Vereinbarung</TableCaption>
             <Thead>
               <Tr>
-                <Th>Öffnungszeiten</Th>
                 <Th></Th>
-                <Th></Th>
+                <Th>Nachmittags</Th>
+                <Th>Abends</Th>
               </Tr>
             </Thead>
             <Tbody>

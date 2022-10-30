@@ -46,7 +46,7 @@ export default function Navigation(props) {
             spacing={4}
             display={{ base: "none", md: "flex" }}
           ></HStack>
-          <Text as="b">Dr. med. vet. Jens Giese - Praxis für Kleintiere</Text>
+          <Text as="b">Tierarzt Dr. med. vet. Jens Giese</Text>
         </HStack>
 
         {/*<Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
