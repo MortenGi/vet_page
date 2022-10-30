@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.48f4f2d1.css",
-    "main.js": "/static/js/main.b42afc75.js",
+    "main.js": "/static/js/main.1adf4c70.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/veterinaer_logo.jpg": "/static/media/veterinaer_logo.3877c4a14dae8f9c5b09.jpg",
     "static/media/hund_knuffig_resized.jpg": "/static/media/hund_knuffig_resized.78e7354243f20590e814.jpg",
     "index.html": "/index.html",
     "main.48f4f2d1.css.map": "/static/css/main.48f4f2d1.css.map",
-    "main.b42afc75.js.map": "/static/js/main.b42afc75.js.map",
+    "main.1adf4c70.js.map": "/static/js/main.1adf4c70.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48f4f2d1.css",
-    "static/js/main.b42afc75.js"
+    "static/js/main.1adf4c70.js"
   ]
 }
